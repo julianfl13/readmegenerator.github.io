@@ -58,16 +58,15 @@ const questions = [
 
 function init() {
 
-    //ask questions in the console
-    // .then stores the response in the terminal
+ 
     inquirer.prompt(questions).then((answers) => {
         console.log("User Answer Object", answers)
 
-      // calls the api and passes the github login from the user.
+      
       api.getUser(answers.github).then((githubData) => { 
-        // this allows us to only get the data in the githubdata
+      
         var githubProfile = githubData.data;
-        // Combining all of our data. "..." allows us to add it to one
+        
         var allData = {...answers, ...githubProfile}
         
         var readmetext = generateMarkdown(allData);
@@ -86,10 +85,6 @@ function init() {
 init();
 
 
-//1- watch node tutorial 
-//2- axio tutorial
-//3- inquirer 
-// path tells you to put it in a folder
 function writeToFile(fileName, data) {
   return fs.writeFileSync(path.join(fileName), data);
 }

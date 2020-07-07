@@ -1,10 +1,10 @@
 
-# Practice
+# Test
 
 
 ## Description
 
-its a practice
+Testing
 
 ## Table of Contents 
 
@@ -25,7 +25,7 @@ its a practice
 To install necessary dependencies, run the following command:
 
 ```
-npm i
+npm
 ```
 
 ## Usage
@@ -43,7 +43,7 @@ npm i
 To run tests, run the following command:
 
 ```
-npm test
+npm
 ```
 
 ## Questions
